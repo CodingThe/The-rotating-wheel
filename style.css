@@ -29,7 +29,7 @@ h1 {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    animation: rotate 2s linear infinite;
+    transform-origin: center center; /* Added to set the rotation origin to the center */
 }
 
 .tiliya {
@@ -54,6 +54,11 @@ h1 {
 .t10 { transform: rotate(300deg); }
 .t11 { transform: rotate(330deg); }
 .t12 { transform: rotate(360deg); }
+
+/* Rotate on Hover Effect */
+.wheel:hover {
+    animation: rotate 2s linear infinite;
+}
 
 @keyframes rotate {
     to {
